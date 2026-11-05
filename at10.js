@@ -2,8 +2,10 @@
 
 var valorCompra = 100
 var membroVip = true
-var zonaRural = true
+var zonaRural = false
 
-if (valorCompra > 100 || membroVip == true){
-    console.log ("Tem frete gratis!")
+if ((valorCompra > 100 || membroVip == true) && (!zonaRural)){
+    console.log ("Tem direito à Frete Grátis")
+}else {
+    console.log ("Não tem direito à Frete Gratis")
 }
